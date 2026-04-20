@@ -36,8 +36,8 @@ export default function Hero() {
                             {/* Placeholder for video thumbnail, using a metallic gradient for now */}
                             <div className="absolute inset-0 bg-gradient-to-br from-surface to-background opacity-80" />
                             <img
-                                src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?q=80&w=1600&auto=format&fit=crop"
-                                alt="Dealership Showroom"
+                                src="/ram-truck.png"
+                                alt="Ram Truck Dealership Showroom"
                                 className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40 group-hover:opacity-60 transition-opacity duration-500"
                             />
 
