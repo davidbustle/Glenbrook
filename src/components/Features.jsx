@@ -45,8 +45,8 @@ export default function Features() {
                         <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent rounded-3xl blur-2xl" />
                         <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1500&auto=format&fit=crop"
-                                alt="Jeep Wrangler in showroom"
+                                src="https://upload.wikimedia.org/wikipedia/commons/4/4b/2022_Jeep_Grand_Cherokee_Summit_4xe%2C_Front_Left%2C_08-25-2022.jpg"
+                                alt="New 2026 Jeep Concept"
                                 className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
                             />
                         </div>

@@ -32,21 +32,15 @@ export default function Hero() {
                     {/* Left Column: Video & Social Proof */}
                     <div className="lg:col-span-7 flex flex-col gap-6">
                         {/* Video Container */}
-                        <div className="relative aspect-video rounded-2xl bg-surface border border-white/10 overflow-hidden group cursor-pointer shadow-2xl shadow-black/50">
-                            {/* Placeholder for video thumbnail, using a metallic gradient for now */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-surface to-background opacity-80" />
-                            <img
-                                src="/ram-truck.png"
-                                alt="Ram Truck Dealership Showroom"
-                                className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40 group-hover:opacity-60 transition-opacity duration-500"
-                            />
-
-                            {/* Play Button Overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 rounded-full bg-accent/90 flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/30">
-                                    <PlayCircle size={40} className="text-white ml-1" />
-                                </div>
-                            </div>
+                        <div className="relative aspect-video rounded-2xl bg-surface border border-white/10 overflow-hidden shadow-2xl shadow-black/50">
+                            <iframe 
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/kxXojUYUnnM" 
+                                title="Glenbrook Dodge Chrysler Jeep Ram" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowFullScreen
+                            ></iframe>
                         </div>
 
                         {/* Rating Snippet & Testimonial */}
