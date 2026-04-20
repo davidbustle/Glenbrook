@@ -3,8 +3,8 @@ import { RetellWebClient } from 'retell-client-js-sdk';
 
 const RetellContext = createContext(null);
 
-const agentId = "agent_3707cceabab37f4fb014ab1f24";
-const apiKey = "key_35b8b81668023f101a2353134e52";
+const agentId = import.meta.env.VITE_RETELL_AGENT_ID;
+const apiKey = import.meta.env.VITE_RETELL_API_KEY;
 
 export function RetellProvider({ children }) {
     const [retellClient, setRetellClient] = useState(null);
