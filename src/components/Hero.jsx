@@ -61,13 +61,13 @@ export default function Hero() {
 
                             <div className="bg-surface rounded-xl p-5 border border-white/5 flex-[2] flex flex-col justify-center">
                                 <p className="text-secondary italic mb-3">
-                                    "The easiest car buying experience I've ever had. No pressure, completely transparent pricing, and they treated me like royalty."
+                                    "Hands down the easiest car buying experience in Fort Wayne. No pressure from the salespeople, completely transparent pricing, and excellent communication throughout the process."
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent to-accentHover flex items-center justify-center text-white font-bold text-xs">
-                                        JD
+                                        MT
                                     </div>
-                                    <span className="text-primary font-medium text-sm">— James D., Recent Buyer</span>
+                                    <span className="text-primary font-medium text-sm">— Mark T., Recent Buyer</span>
                                 </div>
                             </div>
                         </div>

@@ -6,19 +6,19 @@ export default function Testimonials() {
         {
             name: "Michael R.",
             date: "2 weeks ago",
-            text: "Bought a new Ram 1500 Limited. The concierge service was incredible. They had the truck cleaned, fueled, and paperwork ready before I even arrived at the dealership. Highly recommend.",
+            text: "My wife and I recently bought a new Jeep Grand Cherokee from Glenbrook Dodge. The sales process was entirely smooth and absolutely zero pressure. The staff in Fort Wayne went out of their way to answer our questions.",
             rating: 5
         },
         {
             name: "Sarah Jenkins",
             date: "1 month ago",
-            text: "The easiest Jeep purchase ever. No pressure from finance, transparent pricing from the start, and they gave me top dollar for my trade-in without the usual haggling.",
+            text: "Highly recommend Glenbrook! I brought my Ram 1500 in for some service, and their department was fast, professional, and kept me in the loop. By far the easiest dealership experience I've had.",
             rating: 5
         },
         {
             name: "David T.",
             date: "3 months ago",
-            text: "I drive 50 miles specifically to use their service department and buy my cars here. The white-glove treatment is real. Ask for their concierge service.",
+            text: "Transparent pricing from the start. They helped me get a great rate on my new Dodge Charger and walked me through all the finance options without the usual haggling or back-and-forth games.",
             rating: 5
         }
     ];
