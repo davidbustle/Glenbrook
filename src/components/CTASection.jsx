@@ -1,7 +1,10 @@
 import React from 'react';
-import { Headphones } from 'lucide-react';
+import { Headphones, PhoneOff, Loader2 } from 'lucide-react';
+import { useRetell } from '../RetellContext';
 
 export default function CTASection() {
+    const { isCalling, isConnecting, toggleCall } = useRetell();
+
     return (
         <section className="relative py-24 bg-surface border-t border-white/5 overflow-hidden">
             {/* Background elements */}
@@ -22,9 +25,26 @@ export default function CTASection() {
                         {/* Rotating Conic Gradient Glow */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] bg-[conic-gradient(from_0deg,transparent_0_180deg,#60a5fa_360deg)] animate-[spin_1.5s_linear_infinite]" />
 
-                        <button className="w-full relative bg-primary text-background hover:bg-white transition-colors duration-300 rounded-full py-4 px-8 font-bold text-lg flex items-center justify-center gap-3 z-10">
-                            <Headphones size={24} className="group-hover:scale-110 transition-transform" />
-                            Connect With Concierge
+                        <button 
+                            onClick={toggleCall}
+                            className={`w-full relative ${isCalling ? 'bg-red-500 text-white' : 'bg-primary text-background'} hover:bg-white transition-colors duration-300 rounded-full py-4 px-8 font-bold text-lg flex items-center justify-center gap-3 z-10 shadow-lg`}
+                        >
+                            {isConnecting ? (
+                                <>
+                                    <Loader2 size={24} className="animate-spin" />
+                                    Connecting...
+                                </>
+                            ) : isCalling ? (
+                                <>
+                                    <PhoneOff size={24} className="group-hover:scale-110 transition-transform" />
+                                    End Call
+                                </>
+                            ) : (
+                                <>
+                                    <Headphones size={24} className="group-hover:scale-110 transition-transform" />
+                                    Connect With Concierge
+                                </>
+                            )}
                         </button>
                     </div>
                 </div>

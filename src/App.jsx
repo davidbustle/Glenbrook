@@ -8,20 +8,23 @@ import Testimonials from './components/Testimonials'
 import Process from './components/Process'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
+import { RetellProvider } from './RetellContext'
 
 function App() {
   return (
-    <div className="min-h-screen bg-background relative selection:bg-accent/30 selection:text-white">
-      <Navbar />
-      <TrustBar />
-      <Hero />
-      <FeaturedLogos />
-      <Features />
-      <Testimonials />
-      <Process />
-      <CTASection />
-      <Footer />
-    </div>
+    <RetellProvider>
+      <div className="min-h-screen bg-background relative selection:bg-accent/30 selection:text-white">
+        <Navbar />
+        <TrustBar />
+        <Hero />
+        <FeaturedLogos />
+        <Features />
+        <Testimonials />
+        <Process />
+        <CTASection />
+        <Footer />
+      </div>
+    </RetellProvider>
   )
 }
 
