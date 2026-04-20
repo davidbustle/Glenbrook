@@ -13,10 +13,10 @@ export default function Footer() {
                         <div className="flex items-center gap-2 cursor-pointer mb-6 group">
                             <div className="flex flex-col text-left">
                                 <span className="font-extrabold text-2xl tracking-tighter text-primary italic leading-none group-hover:text-accent transition-colors">
-                                    PERFORMANCE
+                                    GLENBROOK
                                 </span>
                                 <span className="text-[10px] font-semibold tracking-widest text-secondary mt-1">
-                                    CHRYSLER JEEP DODGE RAM CENTERVILLE
+                                    DODGE CHRYSLER JEEP RAM
                                 </span>
                             </div>
                         </div>
@@ -43,12 +43,12 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="text-secondary">
                                 <span className="block text-primary font-medium mb-1">Sales & Concierge</span>
-                                <a href="tel:800-555-0199" className="hover:text-accent transition-colors tracking-wide">(800) 555-0199</a>
+                                <a href="tel:1-260-368-8110" className="hover:text-accent transition-colors tracking-wide">1 (260) 368-8110</a>
                             </li>
                             <li className="text-secondary mt-4">
                                 <span className="block text-primary font-medium mb-1">Address</span>
-                                1234 Auto Mall Drive<br />
-                                Luxury City, ST 90210
+                                100 W Coliseum Blvd<br />
+                                Fort Wayne, IN 46805
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                 {/* Legal / Copyright Map */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary">
                     <p>
-                        © {new Date().getFullYear()} Performance Auto Group. All rights reserved. Designed by: <a href="https://revenantagency.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline underline-offset-2">Revenant</a>.
+                        © {new Date().getFullYear()} Glenbrook Dodge Chrysler Jeep Ram. All rights reserved. Designed by: <a href="https://revenantagency.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline underline-offset-2">Revenant</a>.
                     </p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

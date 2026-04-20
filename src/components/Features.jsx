@@ -18,7 +18,7 @@ export default function Features() {
                     {/* Left Column: Text Content */}
                     <div>
                         <p className="text-secondary tracking-widest uppercase font-semibold text-sm mb-4">
-                            The Performance Difference
+                            The Glenbrook Difference
                         </p>
                         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 leading-tight">
                             An Unmatched Dealership <br />
