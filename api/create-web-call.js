@@ -13,7 +13,6 @@ export default async function handler(req, res) {
     }
 
     try {
-        const fetch = (await import('node-fetch')).default || globalThis.fetch;
         
         const response = await fetch("https://api.retellai.com/v2/create-web-call", {
             method: "POST",
