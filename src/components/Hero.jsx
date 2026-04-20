@@ -124,7 +124,7 @@ export default function Hero() {
 
                                     <button 
                                         onClick={toggleCall}
-                                        className={`w-full relative ${isCalling ? 'bg-red-500 text-white' : 'bg-primary text-background'} hover:bg-white transition-colors duration-300 rounded-full py-4 px-6 font-bold text-lg flex items-center justify-center gap-2 z-10 shadow-lg`}
+                                        className={`w-full relative ${isCalling ? 'bg-red-500 text-white hover:bg-red-600' : 'bg-primary text-background hover:bg-white'} transition-colors duration-300 rounded-full py-4 px-6 font-bold text-lg flex items-center justify-center gap-2 z-10 shadow-lg`}
                                     >
                                         {isConnecting ? (
                                             <>
