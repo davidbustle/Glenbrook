@@ -3,9 +3,6 @@ import { RetellWebClient } from 'retell-client-js-sdk';
 
 const RetellContext = createContext(null);
 
-const agentId = import.meta.env.VITE_RETELL_AGENT_ID;
-const apiKey = import.meta.env.VITE_RETELL_API_KEY;
-
 export function RetellProvider({ children }) {
     const [retellClient, setRetellClient] = useState(null);
     const [isCalling, setIsCalling] = useState(false);
@@ -47,17 +44,13 @@ export function RetellProvider({ children }) {
 
         setIsConnecting(true);
         try {
-            const response = await fetch("https://api.retellai.com/v2/create-web-call", {
-                method: "POST",
-                headers: {
-                    "Authorization": `Bearer ${apiKey}`,
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ agent_id: agentId })
+            // Securely proxy the token generation through our Vercel Serverless Function
+            const response = await fetch("/api/create-web-call", {
+                method: "POST"
             });
 
             if (!response.ok) {
-                throw new Error("Failed to create web call token");
+                throw new Error("Failed to create web call token via backend API");
             }
 
             const data = await response.json();
