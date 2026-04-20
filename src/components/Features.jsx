@@ -3,11 +3,11 @@ import { CheckCircle2 } from 'lucide-react';
 
 export default function Features() {
     const benefits = [
-        "No-Haggle, True Market Pricing on all inventory.",
-        "Largest selection of 2500/3500 HD Rams in the state.",
-        "Exclusive 10-Year/100,000 Mile Powertrain Warranty.",
-        "Complimentary loaner vehicles for life.",
-        "VIP Access to incoming inventory before it hits the lot."
+        "Fair and competitive pricing on all new and used inventory.",
+        "Smooth, seamless, and stress-free experience with zero gimmicks.",
+        "Specialized Wagoneer Service Valet and Express Lane servicing.",
+        "Fast Trade-in Value to get top dollar for your current vehicle instantly.",
+        "Flexible, no-hassle financing tailored to your exact lifestyle and budget."
     ];
 
     return (
