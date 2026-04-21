@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { PlayCircle, ShieldCheck, Headphones, Star, PhoneOff, Loader2 } from 'lucide-react';
 import { useRetell } from '../RetellContext';
 
 export default function Hero() {
     const { isCalling, isConnecting, toggleCall } = useRetell();
+
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://widgets.leadconnectorhq.com/loader.js";
+        script.setAttribute("data-resources-url", "https://widgets.leadconnectorhq.com/chat-widget/loader.js");
+        script.setAttribute("data-widget-id", "69e6dd277ca09b82f58f12a4");
+        script.async = true;
+
+        const wrapper = document.getElementById("leadconnector-wrapper");
+        if (wrapper) {
+            wrapper.appendChild(script);
+        }
+        
+        return () => {
+            if (wrapper && wrapper.contains(script)) {
+                wrapper.removeChild(script);
+            }
+        };
+    }, []);
 
     return (
         <section className="relative bg-background pt-8 pb-8 lg:pt-16 lg:pb-12 overflow-hidden">
@@ -65,6 +84,9 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Centered LeadConnector Widget Container */}
+                        <div id="leadconnector-wrapper" className="flex justify-center w-full mt-4"></div>
                     </div>
 
                     {/* Right Column: Assistant CTA Box (CDJR Sales Concierge) */}
