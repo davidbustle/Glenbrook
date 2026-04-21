@@ -85,8 +85,6 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* Centered LeadConnector Widget Container */}
-                        <div id="leadconnector-wrapper" className="flex justify-center w-full mt-4"></div>
                     </div>
 
                     {/* Right Column: Assistant CTA Box (CDJR Sales Concierge) */}
@@ -167,6 +165,15 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Single Column Chat Widget Container with Glow Effect */}
+                <div className="mt-16 relative flex justify-center w-full max-w-4xl mx-auto">
+                    {/* Cool Glow Effect Background */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[600px] max-h-[800px] bg-gradient-to-tr from-accent/30 to-blue-600/30 blur-[100px] rounded-[3rem] pointer-events-none" />
+                    
+                    {/* The Widget Wrapper */}
+                    <div id="leadconnector-wrapper" className="relative z-10 w-full flex justify-center"></div>
                 </div>
             </div>
         </section>
