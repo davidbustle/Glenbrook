@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import TrustBar from './components/TrustBar'
 import Hero from './components/Hero'
@@ -25,6 +26,7 @@ function App() {
         <Process />
         <CTASection />
         <Footer />
+        <Analytics />
       </div>
     </RetellProvider>
   )
